@@ -28,29 +28,36 @@ img{
     display: block;
 }
 .wrapper{
+  background: red;
     width: 1000px;
     padding-top: 40px;
     padding-bottom: 40px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     /*
         TODO:
-        - Center up the page - I revisited the floats reading assignment and grabbed code from there. The padding doesn't do much but leave it in. The "marin line is essental for centering"
+        - Center up the page - I revisited the floats reading assignment and grabbed code from there. The padding doesn't do much but I want to leave it in. The "margin line is essental for centering"
 
         - Create a flexbox containerer for
         the major page sections - OK... a shift happened for sure!
+
+        Putting display: flex here, under .wrapper makes all of its children into flex objects. Therefore, any flex properties that need to be adjusted need to be related to position, but not necessarily display: flex.
     */
 }
+
 #site-header{
-    display:flex;
+    width: 1000px;
     /*
         TODO
-        - Flexbox property here... added
+        - Flexbox property here... NEVERMIND>... Lyman assured me!
     */
 }
 #site-header div{
     text-align: center;
     padding: 60px 0 120px 0;
+    width: 1000px;
     font-size: 4em;
     background-image: url('header-img.jpg');
     background-size: cover;
@@ -59,8 +66,6 @@ img{
         TODO:
         - Add a background image "header-img.jpg"
         make sure that the path to the image is correct
-
-
 
         **I had to move the header-img.jpg file over to be in the My_iBeer dir next to this style sheet, rather than within an img folder.
 
@@ -82,6 +87,7 @@ img{
     color: white;
     bottom: 20px;
     text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3 );
+    font-family: 'Dancing Script', cursive; /* need to learn Google fonts
 
     /*
         TODO:
@@ -91,28 +97,34 @@ img{
 #main-navigation{
     background: #444;
     display: flex;
+    justify-content: flex-end;
         /*
         TODO:
         - Use Flexbox to arrange the navigation links
+
+        Need to sort flex-direction and justification.....
+
     */
 }
 #main-navigation a{
-    display: flex;
+    /*display: flex; <<< IGNORE THE TO DO*/
     color: white;
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px 20px;
-    justify-content: center;
+
 
     /*
-        TODO:
+        TODO: <<<< WRONG
         - Flexbox - Create general spacing between nav links
 
         ???? I've been
     */
 }
+
 #main-navigation #logo{
-    margin-right: 400px;
+    /*margin-right: 400px;*/
+    flex-grow: 1;
 
     /*
         TODO:
@@ -120,10 +132,12 @@ img{
         that the other links
     */
 }
+
 main{
     padding: 20px;
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
+    width: 590px;
     /*
         TODO:
         - Flexbox: Set the starting width of this element
@@ -134,6 +148,7 @@ aside{
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
+    width: 280px;
     /*
         TODO:
         - Flexbox: Set the starting width of this element
