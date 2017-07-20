@@ -48,10 +48,12 @@ img{
 }
 
 #site-header{
-    width: 1000px;
+    /*width: 1000px;*/
+    flex-grow: 1;
     /*
         TODO
         - Flexbox property here... NEVERMIND>... Lyman assured me!
+        Hmm...actually, I wonder if there is a way to treat this with flex-grow
     */
 }
 #site-header div{
