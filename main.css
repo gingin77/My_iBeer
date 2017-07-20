@@ -29,40 +29,52 @@ img{
 }
 .wrapper{
     width: 1000px;
-
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    display: flex;
     /*
-        TODO: 
-        - Center up the page
+        TODO:
+        - Center up the page - I revisited the floats reading assignment and grabbed code from there. The padding doesn't do much but leave it in. The "marin line is essental for centering"
+
         - Create a flexbox containerer for
-        the major page sections
+        the major page sections - OK... a shift happened for sure!
     */
 }
 #site-header{
+    display:flex;
     /*
         TODO
-        - Flexbox property here
+        - Flexbox property here... added
     */
 }
 #site-header div{
     text-align: center;
     padding: 60px 0 120px 0;
     font-size: 4em;
-
-    /*
-        TODO: 
-        - Add a background image "header-img.jpg"
-        make sure that the path to the image is correct
-    */
-
+    background-image: url('header-img.jpg');
     background-size: cover;
     background-position: right bottom;
+    /*
+        TODO:
+        - Add a background image "header-img.jpg"
+        make sure that the path to the image is correct
+
+
+
+        **I had to move the header-img.jpg file over to be in the My_iBeer dir next to this style sheet, rather than within an img folder.
+
+        I don't know how to check the file path. I just move the files until they are visible.
+    */
 }
+
 #site-header div h1,
 #site-header div h3{
     margin: 0;
     line-height: 1;
     position: relative;
 }
+
 #site-header div h1{
     top: 20px;
 }
@@ -70,36 +82,40 @@ img{
     color: white;
     bottom: 20px;
     text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3 );
+
     /*
-        TODO: 
+        TODO:
         - Use the script font: 'Dancing Script' fot this text
     */
 }
 #main-navigation{
     background: #444;
-
-    /*
-        TODO: 
+    display: flex;
+        /*
+        TODO:
         - Use Flexbox to arrange the navigation links
     */
 }
 #main-navigation a{
-    display: block;
+    display: flex;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px 20px;
+    justify-content: center;
 
     /*
-        TODO: 
+        TODO:
         - Flexbox - Create general spacing between nav links
+
+        ???? I've been
     */
 }
 #main-navigation #logo{
     margin-right: 400px;
 
     /*
-        TODO: 
+        TODO:
         - Flexbox - The logo needs to take up more space
         that the other links
     */
@@ -109,7 +125,7 @@ main{
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
     /*
-        TODO: 
+        TODO:
         - Flexbox: Set the starting width of this element
         - Use relative positioning to bump this upward
     */
@@ -119,7 +135,7 @@ aside{
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
     /*
-        TODO: 
+        TODO:
         - Flexbox: Set the starting width of this element
         - Use relative positioning to bump this upward
     */
@@ -157,38 +173,27 @@ article time{
     margin-bottom: 30px;
     color: #666;
 }
+
 article img{
+    display:
     /*
-        TODO: 
+        TODO:
         - Float article images to the right
         and match sizes and spacing to the mockup
     */
 }
 article footer p{
     /*
-        TODO: 
+        TODO:
         - Style the article footer
         HINT: Look to the article header;
     */
 }
 #site-footer{
-    
+
     background: #333;
     /*
-        TODO: 
+        TODO:
         - Style the site footer
     */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
