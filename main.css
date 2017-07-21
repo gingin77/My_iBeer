@@ -215,7 +215,8 @@ article time{
 }
 
 article img{
-    display:
+    float: right;
+    width: 50%;
     /*
         TODO:
         - Float article images to the right
@@ -223,6 +224,7 @@ article img{
     */
 }
 article footer p{
+    /*text-transform: capitalize;*/
     /*
         TODO:
         - Style the article footer
