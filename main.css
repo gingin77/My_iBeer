@@ -28,15 +28,16 @@ img{
     display: block;
 }
 .wrapper{
-  background: red;
+  /*background: red;*/
   width: 1000px;
   /*padding-top: 40px;
   padding-bottom: 40px;*/
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  /*THis may have been something Lyman suggested to help me out of the hole I was in! It's essential. Without this, the aside and main elements move to the right...so that they are in-line with header.*/
   justify-content: center;
-  /*flex-direction: column;
+  /*flex-direction: column; << I tested this. It is NOT useful. Forces aside below rather than adjacent.
     /*
         TODO:
         - Center up the page - I revisited the floats reading assignment and grabbed code from there. The padding doesn't do much but I want to leave it in. The "margin line is essental for centering"
@@ -67,6 +68,7 @@ img{
     background-image: url('header-img.jpg');
     background-size: cover;
     background-position: right bottom;
+    z-index: 0;
     /*
         TODO:
         - Add a background image "header-img.jpg"
@@ -108,7 +110,7 @@ img{
     background: #444;
     display: flex;
     justify-content: flex-end;
-    /*flex-direction: row;
+    /*3flex-direction: row;
         /*
         TODO:
         - Use Flexbox to arrange the navigation links
@@ -147,11 +149,15 @@ img{
 /* NOW I'm in main.... */
 
 main{
+    /*border: 3px solid #6320ee;  <<< used for troubleshooting purposes*/
     padding: 20px;
-    background-color: #444;
+    background-color: #444;/**/
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
-    flex-basis: 590px;
+    width: 564px;
     position: relative;
+    margin-top: -80px;
+    margin-bottom: 20px;
+    z-index: 10;
     /*
         TODO:
         - Flexbox: Set the starting width of this element
@@ -162,8 +168,10 @@ aside{
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
-    flex-basis: 280px;
+    width: 205px;
     position: relative;
+    margin-top: -80px;
+    z-index: 10;
     /*
         TODO:
         - Flexbox: Set the starting width of this element - OK
