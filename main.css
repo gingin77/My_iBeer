@@ -247,10 +247,10 @@ article footer p{ /* I'm starting by grabbing code from 'article h2' above....*/
 }
 #site-footer{
   /*text-align: center;*/
-  border: 3px solid purple;
+  /*border: 3px solid purple;*/
   color: white;
   text-decoration: none;
-  /*padding-top: 15px;*/
+  padding: 10px;*/
   /*padding-bottom: 15 px;*/
   /*margin: auto; use text-align instead... */
   /*background: #333 /*I can't remember where this color came from.....#444 is correct*/;
