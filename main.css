@@ -246,10 +246,24 @@ article footer p{ /* I'm starting by grabbing code from 'article h2' above....*/
     */
 }
 #site-footer{
-
-    background: #333;
+  /*text-align: center;*/
+  border: 3px solid purple;
+  color: white;
+  text-decoration: none;
+  /*padding-top: 15px;*/
+  /*padding-bottom: 15 px;*/
+  /*margin: auto; use text-align instead... */
+  /*background: #333 /*I can't remember where this color came from.....#444 is correct*/;
+  background: #444;
+  display: flex;
+  justify-content: center;
     /*
         TODO:
         - Style the site footer
+
+        start by copying styling code from "main-navigation a" test that out... then look at "#site-header div"... Actually, site-header div is only useful for text-align.. Look at graphics on page again...
+
+        I want the spacing used on the bottom and top of the page to match.... Use inspector tooll...
+
     */
 }
