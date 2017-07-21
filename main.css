@@ -156,7 +156,7 @@ main{
     width: 564px;
     position: relative;
     margin-top: -80px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     z-index: 10;
     /*
         TODO:
@@ -171,6 +171,7 @@ aside{
     width: 205px;
     position: relative;
     margin-top: -80px;
+    margin-bottom: 60px;
     z-index: 10;
     /*
         TODO:
@@ -221,6 +222,8 @@ article img{
         TODO:
         - Float article images to the right
         and match sizes and spacing to the mockup
+
+        The combination of float right and width 50% made things look the way I wanted them to.
     */
 }
 article footer p{ /* I'm starting by grabbing code from 'article h2' above....*/
@@ -239,7 +242,7 @@ article footer p{ /* I'm starting by grabbing code from 'article h2' above....*/
     /*
         TODO:
         - Style the article footer
-        HINT: Look to the article header;
+        HINT: Look to the article header;.... and article h2 and article time
     */
 }
 #site-footer{
