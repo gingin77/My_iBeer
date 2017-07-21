@@ -223,8 +223,19 @@ article img{
         and match sizes and spacing to the mockup
     */
 }
-article footer p{
-    /*text-transform: capitalize;*/
+article footer p{ /* I'm starting by grabbing code from 'article h2' above....*/
+    font-size: 0.8em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #666;
+    line-height: 1em;
+    font-weight: bold;
+    /*margin-top: 10px;*/
+
+    /*margin: 30px 0 30px 0;*/
+    padding: 30px 0 0 0;
+    border-top: 1px solid #ccc;
+
     /*
         TODO:
         - Style the article footer
