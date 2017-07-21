@@ -65,7 +65,7 @@ img{
     padding: 60px 0 120px 0;
     width: 1000px;
     font-size: 4em;
-    background-image: url('header-img.jpg');
+    background-image: url('img/header-img.jpg');
     background-size: cover;
     background-position: right bottom;
     z-index: 0;
@@ -186,6 +186,7 @@ aside h3{
     border-bottom: 1px solid #ccc;
 }
 aside img{
+    /*border: 10px solid #6320ee;<< used for trouble shooting.*/
     border-radius: 50%;
     margin-bottom: 30px;
     border: 2px solid white;
