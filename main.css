@@ -29,13 +29,14 @@ img{
 }
 .wrapper{
   background: red;
-    width: 1000px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  width: 1000px;
+  /*padding-top: 40px;
+  padding-bottom: 40px;*/
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*flex-direction: column;
     /*
         TODO:
         - Center up the page - I revisited the floats reading assignment and grabbed code from there. The padding doesn't do much but I want to leave it in. The "margin line is essental for centering"
@@ -49,11 +50,13 @@ img{
 
 #site-header{
     /*width: 1000px;*/
-    flex-grow: 1;
+    /*flex-grow: 1;*/
     /*
         TODO
         - Flexbox property here... NEVERMIND>... Lyman assured me!
         Hmm...actually, I wonder if there is a way to treat this with flex-grow
+
+        It seems neither width property is needed. Looks like the child div element below compensates space-wise.....
     */
 }
 #site-header div{
@@ -85,6 +88,7 @@ img{
 #site-header div h1{
     top: 20px;
 }
+
 #site-header div h3{
     color: white;
     bottom: 20px;
@@ -96,10 +100,15 @@ img{
         - Use the script font: 'Dancing Script' fot this text
     */
 }
+
+
+/* Moving down from the #site-header section, but take note... main-navigation is still part of the header element*/
+
 #main-navigation{
     background: #444;
     display: flex;
     justify-content: flex-end;
+    /*flex-direction: row;
         /*
         TODO:
         - Use Flexbox to arrange the navigation links
@@ -135,11 +144,14 @@ img{
     */
 }
 
+/* NOW I'm in main.... */
+
 main{
     padding: 20px;
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
-    width: 590px;
+    flex-basis: 590px;
+    position: relative;
     /*
         TODO:
         - Flexbox: Set the starting width of this element
@@ -150,13 +162,15 @@ aside{
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
-    width: 280px;
+    flex-basis: 280px;
+    position: relative;
     /*
         TODO:
-        - Flexbox: Set the starting width of this element
-        - Use relative positioning to bump this upward
+        - Flexbox: Set the starting width of this element - OK
+        - Use relative positioning to bump this upward - OK
     */
 }
+
 aside h3{
     text-align: center;
     margin: 0 0 10px 0;
